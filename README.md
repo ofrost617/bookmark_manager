@@ -20,6 +20,6 @@ I want to filter my links by their tags
 |   Letter        |   Ruby with DataMapper | SQL
 |------------------|------|-------:|
 | Create new row     |  Class.create(column_name: 'string')  |  INSERT INTO "table" (column_name) VALUES ( 'string' );
-| Read all rows in the table | Class.inspect | SELECT * FROM table
+| Read all rows in the table | Class.inspect or Class.all | SELECT * FROM table
 | Update one or several columns in rows| Class.update(id: 1, column_name: 'string') | UPDATE table SET column_name1 = value1 WHERE column_name = value
 | Delete row | class = Class.new, class.destory | DELETE FROM table WHERE comlumn_name = value
