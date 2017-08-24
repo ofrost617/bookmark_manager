@@ -7,9 +7,12 @@ feature 'Viewing Links' do
     Link.create(url: 'https://github.com/makersacademy/', title: 'Makers GitHub')
     visit '/links'
     expect(page.status_code).to eq 200
+  end
+  
 
     within 'ul#links' do
       expect(page).to have_content('Makers GitHub')
     end
-  end
+    
+  
 end
